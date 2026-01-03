@@ -229,6 +229,51 @@ sequenceDiagram
     end
 ```
 
+### 🌐 Deployment Topology
+Visualizing the physical distribution of components across the User Environment, Local Machine/VPS, and Blockchain Network.
+
+```mermaid
+graph TB
+    subgraph "User Environment"
+        Browser[Web Browser]
+        Phantom[Phantom Wallet Extension]
+    end
+
+    subgraph "Local Machine / VPS"
+        subgraph "Frontend Container (Port 3000)"
+            Next[Next.js App Router]
+        end
+
+        subgraph "Backend Container (Port 3021)"
+            Node[Node.js Server]
+            Worker[Web Workers]
+            DB[(LowDB JSON)]
+        end
+    end
+
+    subgraph "Blockchain Network"
+        RPC[RPC Node (Helius/QuickNode)]
+        Jito[Jito Block Engine]
+    end
+
+    Browser -->|HTTP/WebSocket| Next
+    Browser -->|Connect| Phantom
+    Next -->|Proxy API| Node
+    Next -->|WebSocket| Node
+    Node -->|Read/Write| DB
+    Node -->|JSON-RPC| RPC
+    Node -->|HTTPS| Jito
+    Phantom -->|Sign Tx| RPC
+
+    classDef user fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef local fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef cloud fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+
+    class Browser,Phantom user;
+    class Next,Node,Worker,DB local;
+    class RPC,Jito cloud;
+```
+
 ### 📂 Project Structure
 
 ```bash
