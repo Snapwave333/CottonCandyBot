@@ -1,0 +1,165 @@
+@startuml Cotton Candy Bot - Trade Execution Sequence
+!theme blueprint
+
+' Meta information
+title Cotton Candy Bot - Trade Execution Flow (UML 2.5)
+footer Generated: 2025-12-29 | Version: 2.0.0 | Author: Documentation Team
+header Sequence Diagram - Strategy-Triggered Trade Execution
+
+actor User
+participant "Browser\n(React)" as Browser
+participant "Socket.io" as Socket
+participant "REST API" as API
+participant "Trading Engine" as Engine
+participant "Execution Engine" as ExecEngine
+participant "Wallet Manager" as WalletMgr
+participant "Crypto Manager" as Crypto
+participant "Database" as DB
+participant "Jupiter API" as Jupiter
+participant "Solana RPC" as Solana
+participant "Jito Bundle" as Jito
+
+== Strategy Creation ==
+User -> Browser: Configure DCA Strategy
+activate Browser
+Browser -> API: POST /api/strategy/create\n{type: "DCA", config: {...}}
+activate API
+API -> DB: Save strategy
+activate DB
+DB --> API: Strategy saved
+deactivate DB
+API --> Browser: {id: "strat-123", status: "IDLE"}
+deactivate API
+Browser --> User: Strategy created
+deactivate Browser
+
+== Strategy Activation ==
+User -> Browser: Start strategy
+activate Browser
+Browser -> API: POST /api/strategy/start\n{id: "strat-123"}
+activate API
+API -> DB: Update status = "RUNNING"
+activate DB
+DB --> API: Updated
+deactivate DB
+API -> Socket: emit('strategy_status', {id, status: 'RUNNING'})
+activate Socket
+Socket --> Browser: Receive status update
+deactivate Socket
+API --> Browser: {success: true}
+deactivate API
+deactivate Browser
+
+== Engine Tick Loop (200ms) ==
+loop Every 200ms
+  Engine -> DB: Get active strategies
+  activate DB
+  DB --> Engine: [Strategy(id: "strat-123", type: "DCA", ...)]
+  deactivate DB
+
+  Engine -> Engine: Evaluate strategy conditions
+  note right: Check if interval elapsed\nfor DCA execution
+
+  alt Condition Met
+    Engine -> ExecEngine: executeTrade(strategy, quote)
+    activate ExecEngine
+
+    ExecEngine -> DB: Get settings\n(isPaperMode?)
+    activate DB
+    DB --> ExecEngine: {isPaperMode: false}
+    deactivate DB
+
+    alt Live Trading Mode
+      ExecEngine -> Jupiter: GET /quote\n{inputMint, outputMint, amount}
+      activate Jupiter
+      Jupiter --> ExecEngine: {quote data, route}
+      deactivate Jupiter
+
+      ExecEngine -> WalletMgr: getWallet(strategy.walletId)
+      activate WalletMgr
+      WalletMgr -> DB: Read encrypted wallet
+      activate DB
+      DB --> WalletMgr: {encryptedKey, publicKey}
+      deactivate DB
+
+      WalletMgr -> Crypto: decrypt(encryptedKey)
+      activate Crypto
+      Crypto --> WalletMgr: Keypair
+      deactivate Crypto
+      WalletMgr --> ExecEngine: Keypair
+      deactivate WalletMgr
+
+      ExecEngine -> Jupiter: POST /swap\n{quote, userPublicKey}
+      activate Jupiter
+      Jupiter --> ExecEngine: {swapTransaction (base64)}
+      deactivate Jupiter
+
+      ExecEngine -> ExecEngine: Sign transaction with Keypair
+
+      alt Jito Bundle Enabled
+        ExecEngine -> Jito: POST /bundle\n{transactions, tipAmount}
+        activate Jito
+        Jito -> Solana: Submit bundle with tip
+        activate Solana
+        Solana --> Jito: {bundleId}
+        deactivate Solana
+        Jito --> ExecEngine: {bundleId, status}
+        deactivate Jito
+      else Direct Submission
+        ExecEngine -> Solana: sendTransaction(signedTx)
+        activate Solana
+        Solana --> ExecEngine: {signature}
+        deactivate Solana
+      end
+
+      ExecEngine -> Socket: emit('trade_execution',\n{success, signature, amount})
+      activate Socket
+      Socket --> Browser: Display trade result
+      activate Browser
+      Browser --> User: Show notification
+      deactivate Browser
+      deactivate Socket
+
+      ExecEngine -> DB: Update strategy.lastExecution\nAdd log entry
+      activate DB
+      DB --> ExecEngine: Saved
+      deactivate DB
+
+    else Paper Trading Mode
+      ExecEngine -> ExecEngine: simulateTrade()
+      note right: Mock price calculation\nNo real blockchain interaction
+
+      ExecEngine -> Socket: emit('trade_execution',\n{success, signature: "paper_sim_..."})
+      activate Socket
+      Socket --> Browser: Display paper trade
+      deactivate Socket
+
+      ExecEngine -> DB: Update strategy logs
+      activate DB
+      DB --> ExecEngine: Saved
+      deactivate DB
+    end
+
+    ExecEngine --> Engine: {success, result}
+    deactivate ExecEngine
+  end
+end
+
+== Balance Update (Every 10s) ==
+Engine -> WalletMgr: updateBalances()
+activate WalletMgr
+WalletMgr -> Solana: getBalance(publicKey)
+activate Solana
+Solana --> WalletMgr: balance (lamports)
+deactivate Solana
+WalletMgr -> DB: Update wallet.balance
+activate DB
+DB --> WalletMgr: Saved
+deactivate DB
+WalletMgr -> Socket: emit('wallet_update',\n{publicKey, balance})
+activate Socket
+Socket --> Browser: Update portfolio UI
+deactivate Socket
+deactivate WalletMgr
+
+@enduml

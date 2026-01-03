@@ -1,0 +1,146 @@
+@startuml Cotton Candy Bot - Deployment Architecture
+!theme blueprint
+
+' Meta information
+title Cotton Candy Bot - Deployment Architecture (UML 2.5)
+footer Generated: 2025-12-29 | Version: 2.0.0 | Author: Documentation Team
+header Deployment Diagram - Production Infrastructure
+
+node "Client Device" {
+  artifact "Web Browser" {
+    component "Next.js Frontend" as Frontend
+    component "Socket.io Client" as SocketClient
+    component "Wallet Adapter" as WalletAdapter
+  }
+
+  component "Phantom Extension" as Phantom <<External>>
+}
+
+node "Application Server\n(Node.js Runtime)" {
+  artifact "Frontend Server\n(Port 3000)" {
+    component "Next.js SSR" as NextSSR
+    component "Static Assets" as Assets
+  }
+
+  artifact "Backend Server\n(Port 3001)" {
+    component "Express REST API" as Express
+    component "Socket.io Server" as SocketServer
+    component "Trading Engine" as Engine
+    component "Execution Engine" as ExecEngine
+    component "Wallet Manager" as WalletMgr
+    component "Crypto Service" as Crypto
+  }
+
+  artifact "Environment\n(.env)" {
+    file "SECRET_KEY" as Secret
+    file "RPC_URL" as RPC
+    file "JITO_TIP_WALLET" as Jito
+    file "PORT" as Port
+  }
+}
+
+node "Data Storage" {
+  database "lowdb\n(JSON Files)" as DB {
+    file "db.json" {
+      collections {
+        artifact strategies
+        artifact wallets
+        artifact settings
+        artifact logs
+      }
+    }
+  }
+}
+
+cloud "Solana Network" {
+  node "RPC Node\n(Helius/QuickNode)" as SolanaRPC {
+    interface "HTTPS/WSS" as RPC_Interface
+  }
+
+  node "Solana Mainnet\nValidators" as Validators
+}
+
+cloud "External Services" {
+  node "Jupiter Aggregator" as JupiterAPI {
+    interface "/quote" as QuoteAPI
+    interface "/swap" as SwapAPI
+  }
+
+  node "Jito Bundle\nEndpoint" as JitoBundleAPI {
+    interface "/bundle" as BundleAPI
+  }
+
+  node "BirdEye API" as BirdEyeAPI {
+    interface "/token/metadata" as TokenAPI
+    interface "/token/price" as PriceAPI
+  }
+}
+
+' Connections
+Frontend --> NextSSR : "HTTP/HTTPS"
+Frontend --> SocketClient : "Uses"
+SocketClient ..> SocketServer : "WebSocket\n(wss://)"
+Frontend --> WalletAdapter : "Uses"
+WalletAdapter ..> Phantom : "Connect"
+
+NextSSR --> Assets : "Serves"
+Frontend --> Express : "REST API\n(https://)"
+
+Express --> Engine : "Manages"
+Engine --> ExecEngine : "Delegates"
+ExecEngine --> WalletMgr : "Uses"
+WalletMgr --> Crypto : "Decrypts"
+
+Express --> DB : "Read/Write"
+Engine --> DB : "Read/Write"
+ExecEngine --> DB : "Read/Write"
+
+Crypto ..> Secret : "Reads"
+ExecEngine ..> RPC : "Reads"
+ExecEngine ..> Jito : "Reads"
+
+ExecEngine --> RPC_Interface : "HTTPS"
+RPC_Interface --> SolanaRPC
+SolanaRPC --> Validators : "Gossip Protocol"
+
+ExecEngine --> QuoteAPI : "HTTPS"
+ExecEngine --> SwapAPI : "HTTPS"
+ExecEngine --> BundleAPI : "HTTPS"
+Engine --> TokenAPI : "HTTPS"
+Engine --> PriceAPI : "HTTPS"
+
+Phantom ..> SolanaRPC : "Transaction\nSigning"
+
+note right of DB
+  **Persistent Storage**
+  - File-based JSON database
+  - No external DB required
+  - Automatic write batching
+  - Atomic updates
+end note
+
+note left of "Application Server\n(Node.js Runtime)"
+  **Runtime Requirements**
+  - Node.js v18.0.0+
+  - 512MB RAM minimum
+  - 1GB disk space
+  - 24/7 uptime recommended
+end note
+
+note top of SolanaRPC
+  **RPC Provider**
+  Recommended: Helius, QuickNode, or Alchemy
+  - High rate limits required
+  - WebSocket support essential
+  - Low latency critical (<100ms)
+end note
+
+note bottom of "Environment\n(.env)"
+  **Security Configuration**
+  - SECRET_KEY: 32-byte random string
+  - RPC_URL: Premium RPC endpoint
+  - Never commit .env to version control
+  - Rotate keys periodically
+end note
+
+@enduml
