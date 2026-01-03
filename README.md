@@ -20,6 +20,10 @@
 <br>
 *Note: Beta builds are currently available for Windows (x64).*
 
+<br>
+
+![Beta Announcement](./assets/announcement.gif)
+
 </div>
 
 ---
