@@ -1,6 +1,8 @@
 {
   "name": "cotton-candy-bot",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
+  "description": "High-performance Solana trading terminal with MEV protection and optimized tick-loops.",
+  "author": "Snapwave333",
   "private": true,
   "main": "main.js",
   "scripts": {
@@ -67,7 +69,7 @@
     "@types/react": "19.2.7",
     "@types/react-dom": "^18.3.7",
     "concurrently": "^9.2.1",
-    "electron": "^33.2.1",
+    "electron": "33.2.1",
     "electron-builder": "^26.0.12",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",

@@ -14,6 +14,11 @@
 **CottonCandyBot** is a high-performance, full-stack Solana trading terminal engineered for speed, security, and precision. It combines a reactive Next.js dashboard with a hardened Node.js execution engine to deliver 200ms tick-loops, MEV protection, and advanced trading strategies.
 
 [Features](#-feature-breakdown) • [Architecture](#-architecture-overview) • [Installation](#-installation--setup) • [Roadmap](#-roadmap)
+<br><br>
+
+[**📥 DOWNLOAD BETA RELEASE (v1.0.0-beta.exe)**](https://github.com/Snapwave333/CottonCandyBot/releases)
+<br>
+*Note: Beta builds are currently available for Windows (x64).*
 
 </div>
 
