@@ -147,8 +147,8 @@ flowchart TD
     end
 
     subgraph "State & Storage"
-        TickerStore[Ticker Store (Volatile)]
-        MainStore[Trading Store (Persistent)]
+        TickerStore["Ticker Store (Volatile)"]
+        MainStore["Trading Store (Persistent)"]
         DB[(LowDB)]
     end
 
