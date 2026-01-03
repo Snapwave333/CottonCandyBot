@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Snapwave333/CottonCandyBot">
-    <img src="./public/assets/branding/banner.svg" alt="Cotton Candy Bot Banner" width="100%">
+    <img src="./public/assets/branding/smaller_banner.jpg" alt="Cotton Candy Bot Banner" width="100%">
   </a>
 
   <br />
