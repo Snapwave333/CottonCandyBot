@@ -53,6 +53,19 @@ Whether you're sniping launches, DCAing into positions, or managing a swarm of w
 |:---:|:---:|:---:|
 | Live **P/L tracking**, wallet clustering, and interactive charts. | A stunning **glassmorphic dashboard** optimized for data density and clarity. | Seamlessly bridge between **Phantom** main wallets and secure server burners. |
 
+## 📸 Interface Previews
+
+<div align="center">
+  <img src="./public/assets/visuals/feature-dashboard.png" width="100%" alt="Trading Dashboard" style="border-radius: 10px; border: 1px solid #333;" />
+  <p><i>Real-time Glassmorphic Trading Dashboard</i></p>
+</div>
+
+<br />
+
+| 📊 **Advanced Analytics** | 📱 **Mobile Optimized** |
+|:---:|:---:|
+| <img src="./public/assets/visuals/feature-analytics.png" width="100%" alt="Analytics" style="border-radius: 10px;" /> | <img src="./public/assets/visuals/feature-mobile.png" width="100%" alt="Mobile View" style="border-radius: 10px;" /> |
+
 ---
 
 ## 🏗️ System Architecture & Diagrams
