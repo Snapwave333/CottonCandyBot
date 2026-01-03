@@ -13,13 +13,11 @@ import {
   Terminal, 
   Activity, 
   Wallet, 
-  Bot, 
   Play, 
   Pause, 
   Square,
   Menu,
   X,
-  Zap,
   Trash2
 } from "lucide-react";
 
@@ -42,12 +40,24 @@ export function Header() {
         {/* ZONE 1: Identity (Left) */}
         <div className="flex items-center gap-3">
           <Link href="/" className="group flex items-center gap-2">
-            <div className="flex justify-center items-center bg-gradient-to-br from-pink-500 to-blue-500 shadow-[0_0_15px_rgba(169,222,249,0.3)] group-hover:shadow-[0_0_25px_rgba(255,153,200,0.5)] rounded-lg w-9 h-9 transition-all duration-300">
-              <Bot className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex items-baseline gap-1">
-              <span className="font-bold text-white text-lg leading-none tracking-tight">Cotton Candy</span>
-              <span className="font-thin text-pink-500 text-lg leading-none">Bot</span>
+            <motion.div 
+              whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
+              whileTap={{ scale: 0.95 }}
+              className="flex justify-center items-center bg-white/5 group-hover:bg-white/10 shadow-[0_0_15px_rgba(236,72,153,0.2)] group-hover:shadow-[0_0_25px_rgba(236,72,153,0.4)] p-1.5 rounded-lg w-10 h-10 overflow-hidden transition-all duration-300"
+            >
+              <img 
+                src="/assets/branding/logo.png" 
+                alt="Logo" 
+                className="drop-shadow-[0_0_8px_rgba(236,72,153,0.5)] w-full h-full object-contain" 
+              />
+            </motion.div>
+            <div className="flex flex-col">
+              <span className="font-black text-white text-base italic uppercase leading-none tracking-tighter">
+                Cotton Candy
+              </span>
+              <span className="mt-0.5 font-bold text-[10px] text-pink-500 uppercase leading-none tracking-[0.2em]">
+                Terminal
+              </span>
             </div>
           </Link>
         </div>

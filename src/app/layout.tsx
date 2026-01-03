@@ -8,7 +8,7 @@ import { ShaderBackground } from "@/components/ui/shader-background";
 import { ThemeHydrator } from "@/components/theme-hydrator";
 import { NewsTicker } from "@/components/dashboard/news-ticker";
 import { SecurityProvider } from "@/context/SecurityContext";
-import { QuickTradeDialog } from "@/components/dashboard/quick-trade-dialog";
+import { SplashScreen } from "@/components/ui/splash-screen";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,6 +46,7 @@ export default function RootLayout({
         <SolanaProvider>
           <SecurityProvider>
             <WalletProvider>
+              <SplashScreen />
               <ThemeHydrator />
               {children}
               <ShaderBackground />
