@@ -2,6 +2,7 @@
   "name": "cotton-candy-bot",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +10,29 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "server:dev": "nodemon server/index.js --ignore db.json"
+    "server:dev": "nodemon server/index.js --ignore db.json",
+    "electron:dev": "concurrently \"npm run dev\" \"npm run server:dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:build": "next build && electron-builder"
+  },
+  "build": {
+    "appId": "com.cottoncandy.bot",
+    "productName": "CottonCandyBot",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "assets/icon.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*",
+      "main.js",
+      "assets/icon.png"
+    ]
   },
   "dependencies": {
     "@jup-ag/api": "^6.0.48",
@@ -32,6 +55,7 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "server-only": "^0.0.1",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.19",
     "zustand": "^4.5.2"
@@ -42,12 +66,16 @@
     "@types/node": "^20",
     "@types/react": "19.2.7",
     "@types/react-dom": "^18.3.7",
+    "concurrently": "^9.2.1",
+    "electron": "^33.2.1",
+    "electron-builder": "^26.0.12",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "nodemon": "^3.1.0",
     "prettier": "^3.7.4",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "wait-on": "^9.0.3"
   }
 }
