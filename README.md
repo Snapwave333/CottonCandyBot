@@ -68,6 +68,8 @@ Whether you're sniping launches, DCAing into positions, or managing a swarm of w
 
 ## 🏗️ System Architecture & Diagrams
 
+![System Architecture](./public/assets/generated/header_architecture.png)
+
 Cotton Candy employs a decoupled architecture to ensure maximum performance and responsiveness. The system is split into a reactive **Next.js** frontend and a robust **Node.js** backend, communicating via real-time WebSockets.
 
 ### 🧩 Component Overview
