@@ -44,7 +44,27 @@ We love new ideas! If you have an idea for a feature, please check existing issu
 *   We follow standard **Prettier** formatting.
 *   Use descriptive variable and function names.
 
-## 📜 License
+## �️ Generating Visual Assets
+
+We use a Python script to programmatically generate the visual assets (headers, feature cards) used in the `README.md`. This ensures consistent branding and easy updates.
+
+### Prerequisites
+*   Python 3.x
+*   Pillow (`pip install Pillow`)
+
+### Usage
+Run the generation script from the root directory:
+```bash
+python scripts/generate_assets.py
+```
+
+This will:
+1.  Generate high-quality PNGs in `public/assets/generated/`.
+2.  Automatically inject/update references in `README.md`.
+
+If you add new features, please consider adding a corresponding card in `scripts/generate_assets.py`.
+
+## �📜 License
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
