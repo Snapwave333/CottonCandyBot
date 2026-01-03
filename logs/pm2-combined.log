@@ -1,0 +1,290 @@
+2025-12-30T13:16:47: Server script loaded
+2025-12-30T13:16:47: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:47:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:47:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:47:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:47:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:47:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:47:   code: 'EADDRINUSE',
+2025-12-30T13:16:47:   errno: -4091,
+2025-12-30T13:16:47:   syscall: 'listen',
+2025-12-30T13:16:47:   address: '::',
+2025-12-30T13:16:47:   port: 3020
+2025-12-30T13:16:47: }
+2025-12-30T13:16:47: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:47:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:47:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:47:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:47:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:47:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:47:   code: 'EADDRINUSE',
+2025-12-30T13:16:47:   errno: -4091,
+2025-12-30T13:16:47:   syscall: 'listen',
+2025-12-30T13:16:47:   address: '::',
+2025-12-30T13:16:47:   port: 3020
+2025-12-30T13:16:47: }
+2025-12-30T13:16:47: Server script loaded
+2025-12-30T13:16:47: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:47:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:47:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:47:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:47:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:47:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:47:   code: 'EADDRINUSE',
+2025-12-30T13:16:47:   errno: -4091,
+2025-12-30T13:16:47:   syscall: 'listen',
+2025-12-30T13:16:47:   address: '::',
+2025-12-30T13:16:47:   port: 3020
+2025-12-30T13:16:47: }
+2025-12-30T13:16:47: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:47:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:47:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:47:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:47:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:47:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:47:   code: 'EADDRINUSE',
+2025-12-30T13:16:47:   errno: -4091,
+2025-12-30T13:16:47:   syscall: 'listen',
+2025-12-30T13:16:47:   address: '::',
+2025-12-30T13:16:47:   port: 3020
+2025-12-30T13:16:47: }
+2025-12-30T13:16:48: Server script loaded
+2025-12-30T13:16:48: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:48:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:48:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:48:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:48:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:48:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:48:   code: 'EADDRINUSE',
+2025-12-30T13:16:48:   errno: -4091,
+2025-12-30T13:16:48:   syscall: 'listen',
+2025-12-30T13:16:48:   address: '::',
+2025-12-30T13:16:48:   port: 3020
+2025-12-30T13:16:48: }
+2025-12-30T13:16:48: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:48:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:48:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:48:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:48:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:48:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:48:   code: 'EADDRINUSE',
+2025-12-30T13:16:48:   errno: -4091,
+2025-12-30T13:16:48:   syscall: 'listen',
+2025-12-30T13:16:48:   address: '::',
+2025-12-30T13:16:48:   port: 3020
+2025-12-30T13:16:48: }
+2025-12-30T13:16:48: Server script loaded
+2025-12-30T13:16:48: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:48:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:48:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:48:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:48:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:48:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:48:   code: 'EADDRINUSE',
+2025-12-30T13:16:48:   errno: -4091,
+2025-12-30T13:16:48:   syscall: 'listen',
+2025-12-30T13:16:48:   address: '::',
+2025-12-30T13:16:48:   port: 3020
+2025-12-30T13:16:48: }
+2025-12-30T13:16:48: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:48:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:48:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:48:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:48:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:48:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:48:   code: 'EADDRINUSE',
+2025-12-30T13:16:48:   errno: -4091,
+2025-12-30T13:16:48:   syscall: 'listen',
+2025-12-30T13:16:48:   address: '::',
+2025-12-30T13:16:48:   port: 3020
+2025-12-30T13:16:48: }
+2025-12-30T13:16:49: Server script loaded
+2025-12-30T13:16:49: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:49:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:49:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:49:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:49:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:49:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:49:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:49:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:49:   code: 'EADDRINUSE',
+2025-12-30T13:16:49:   errno: -4091,
+2025-12-30T13:16:49:   syscall: 'listen',
+2025-12-30T13:16:49:   address: '::',
+2025-12-30T13:16:49:   port: 3020
+2025-12-30T13:16:49: }
+2025-12-30T13:16:49: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:49:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:49:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:49:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:49:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:49:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:49:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:49:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:49:   code: 'EADDRINUSE',
+2025-12-30T13:16:49:   errno: -4091,
+2025-12-30T13:16:49:   syscall: 'listen',
+2025-12-30T13:16:49:   address: '::',
+2025-12-30T13:16:49:   port: 3020
+2025-12-30T13:16:49: }
+2025-12-30T13:16:50: Server script loaded
+2025-12-30T13:16:50: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:50:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:50:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:50:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:50:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:50:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:50:   code: 'EADDRINUSE',
+2025-12-30T13:16:50:   errno: -4091,
+2025-12-30T13:16:50:   syscall: 'listen',
+2025-12-30T13:16:50:   address: '::',
+2025-12-30T13:16:50:   port: 3020
+2025-12-30T13:16:50: }
+2025-12-30T13:16:50: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:50:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:50:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:50:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:50:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:50:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:50:   code: 'EADDRINUSE',
+2025-12-30T13:16:50:   errno: -4091,
+2025-12-30T13:16:50:   syscall: 'listen',
+2025-12-30T13:16:50:   address: '::',
+2025-12-30T13:16:50:   port: 3020
+2025-12-30T13:16:50: }
+2025-12-30T13:16:51: Server script loaded
+2025-12-30T13:16:51: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:51:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:51:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:51:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:51:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:51:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:51:   code: 'EADDRINUSE',
+2025-12-30T13:16:51:   errno: -4091,
+2025-12-30T13:16:51:   syscall: 'listen',
+2025-12-30T13:16:51:   address: '::',
+2025-12-30T13:16:51:   port: 3020
+2025-12-30T13:16:51: }
+2025-12-30T13:16:51: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:51:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:51:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:51:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:51:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:51:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:51:   code: 'EADDRINUSE',
+2025-12-30T13:16:51:   errno: -4091,
+2025-12-30T13:16:51:   syscall: 'listen',
+2025-12-30T13:16:51:   address: '::',
+2025-12-30T13:16:51:   port: 3020
+2025-12-30T13:16:51: }
+2025-12-30T13:16:53: Server script loaded
+2025-12-30T13:16:53: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:53:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:53:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:53:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:53:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:53:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:53:   code: 'EADDRINUSE',
+2025-12-30T13:16:53:   errno: -4091,
+2025-12-30T13:16:53:   syscall: 'listen',
+2025-12-30T13:16:53:   address: '::',
+2025-12-30T13:16:53:   port: 3020
+2025-12-30T13:16:53: }
+2025-12-30T13:16:53: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:53:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:53:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:53:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:53:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:53:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:53:   code: 'EADDRINUSE',
+2025-12-30T13:16:53:   errno: -4091,
+2025-12-30T13:16:53:   syscall: 'listen',
+2025-12-30T13:16:53:   address: '::',
+2025-12-30T13:16:53:   port: 3020
+2025-12-30T13:16:53: }
+2025-12-30T13:16:55: Server script loaded
+2025-12-30T13:16:55: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:55:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:55:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:55:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:55:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:55:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:55:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:55:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:55:   code: 'EADDRINUSE',
+2025-12-30T13:16:55:   errno: -4091,
+2025-12-30T13:16:55:   syscall: 'listen',
+2025-12-30T13:16:55:   address: '::',
+2025-12-30T13:16:55:   port: 3020
+2025-12-30T13:16:55: }
+2025-12-30T13:16:55: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:55:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:55:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:55:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:55:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:55:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:55:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:55:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:55:   code: 'EADDRINUSE',
+2025-12-30T13:16:55:   errno: -4091,
+2025-12-30T13:16:55:   syscall: 'listen',
+2025-12-30T13:16:55:   address: '::',
+2025-12-30T13:16:55:   port: 3020
+2025-12-30T13:16:55: }
+2025-12-30T13:16:58: Server script loaded
+2025-12-30T13:16:58: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:58:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:58:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:58:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:58:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:58:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:58:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:58:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:58:   code: 'EADDRINUSE',
+2025-12-30T13:16:58:   errno: -4091,
+2025-12-30T13:16:58:   syscall: 'listen',
+2025-12-30T13:16:58:   address: '::',
+2025-12-30T13:16:58:   port: 3020
+2025-12-30T13:16:58: }
+2025-12-30T13:16:58: Uncaught Exception: Error: listen EADDRINUSE: address already in use :::3020
+2025-12-30T13:16:58:     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+2025-12-30T13:16:58:     at listenInCluster (node:net:1997:12)
+2025-12-30T13:16:58:     at Server.listen (node:net:2102:7)
+2025-12-30T13:16:58:     at file:///C:/Users/chrom/OneDrive/Desktop/cotton%20candy%20bot/cotton-candy-bot/server/index.js:267:8
+2025-12-30T13:16:58:     at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+2025-12-30T13:16:58:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2025-12-30T13:16:58:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26) {
+2025-12-30T13:16:58:   code: 'EADDRINUSE',
+2025-12-30T13:16:58:   errno: -4091,
+2025-12-30T13:16:58:   syscall: 'listen',
+2025-12-30T13:16:58:   address: '::',
+2025-12-30T13:16:58:   port: 3020
+2025-12-30T13:16:58: }

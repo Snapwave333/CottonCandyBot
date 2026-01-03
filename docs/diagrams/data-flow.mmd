@@ -1,0 +1,56 @@
+flowchart TD
+    subgraph "Data Sources"
+        RPC[Solana RPC]
+        BirdEye[BirdEye API]
+        Dex[DEX Pools]
+    end
+
+    subgraph "Processing Layer"
+        Engine[Trading Engine]
+        Strategy[Strategy Evaluator]
+        Exec[Execution Engine]
+    end
+
+    subgraph "State & Storage"
+        TickerStore[Ticker Store (Volatile)]
+        MainStore[Trading Store (Persistent)]
+        DB[(LowDB)]
+    end
+
+    subgraph "Presentation"
+        Dashboard[User Dashboard]
+    end
+
+    %% Price Data Flow
+    RPC -->|Price/Logs| Engine
+    BirdEye -->|OHLCV Data| Engine
+    Engine -->|Normalized Tick| TickerStore
+    TickerStore -->|React Hooks| Dashboard
+
+    %% Strategy Data Flow
+    Dashboard -->|Create Strategy| MainStore
+    MainStore -->|Sync| Engine
+    Engine -->|Active Strategies| Strategy
+    RPC -->|Market Data| Strategy
+    Strategy -->|Trigger Signal| Exec
+
+    %% Execution Data Flow
+    Exec -->|Get Quote| Dex
+    Exec -->|Sign Tx| Engine
+    Engine -->|Store Result| DB
+    Engine -->|Execution Event| MainStore
+    MainStore -->|Update UI| Dashboard
+
+    %% Trade Submission
+    Exec -->|Transaction| RPC
+    Exec -->|Bundle| RPC
+
+    classDef source fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+    classDef process fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef storage fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ui fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+
+    class RPC,BirdEye,Dex source;
+    class Engine,Strategy,Exec process;
+    class TickerStore,MainStore,DB storage;
+    class Dashboard ui;

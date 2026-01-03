@@ -1,0 +1,107 @@
+@startuml Cotton Candy Bot - System Architecture
+!theme blueprint
+
+' Meta information
+title Cotton Candy Bot - System Architecture (UML 2.5)
+footer Generated: 2025-12-29 | Version: 2.0.0 | Author: Documentation Team
+header Component Diagram - System Overview
+
+package "Client Layer" <<Rectangle>> #LightBlue {
+  component [Web Browser] as Browser {
+    component [Next.js 14\nApp Router] as NextJS
+    component [React 18\nComponents] as React
+    component [Global Store\n(Zustand)] as Store
+    component [Ticker Store\n(Transient)] as TickerStore
+    component [Trading Worker\n(Web Worker)] as Worker
+    component [Socket.io Client] as SocketClient
+  }
+
+  component [Phantom Wallet\nExtension] as Phantom
+}
+
+package "Backend Layer" <<Rectangle>> #LightGreen {
+  component [Node.js Server\n(Express)] as Server {
+    component [Socket.io Server] as SocketServer
+    component [REST API\nEndpoints] as REST
+  }
+
+  component [Trading Engine\n200ms Tick Loop] as Engine {
+    component [Strategy Processor] as StrategyProc
+    component [Execution Engine] as ExecEngine
+    component [Wallet Manager] as WalletMgr
+  }
+
+  component [Security Layer] as Security {
+    component [AES-256-GCM\nEncryption] as Crypto
+    component [Key Manager] as KeyMgr
+  }
+}
+
+package "Data Layer" <<Rectangle>> #LightYellow {
+  database [lowdb\nJSON Store] as DB {
+    file strategies.json
+    file wallets.json
+    file settings.json
+  }
+}
+
+package "External Services" <<Rectangle>> #LightCoral {
+  cloud [Solana Mainnet\nRPC] as Solana
+  cloud [Jupiter Aggregator\nAPI] as Jupiter
+  cloud [BirdEye API\nToken Data] as BirdEye
+  cloud [Jito Bundle\nEndpoint] as Jito
+}
+
+' Connections
+Browser --> Phantom : "Wallet Connection\n(Web3.js)"
+NextJS --> SocketClient : "Real-time\nEvents"
+SocketClient ..> SocketServer : "WebSocket\n(Socket.io)"
+SocketClient --> TickerStore : "High-Freq\nUpdates"
+TickerStore --> React : "Transient\nSub"
+React --> Store : "Global\nState"
+React --> Worker : "Offload\nLogic"
+Worker --> React : "Trade\nSignals"
+React --> REST : "HTTP API\nCalls"
+
+Server --> Engine : "Manages\nLifecycle"
+Server --> Security : "Uses"
+Engine --> DB : "Read/Write\nStrategies"
+Engine --> StrategyProc : "Contains"
+StrategyProc --> ExecEngine : "Triggers"
+ExecEngine --> WalletMgr : "Uses"
+WalletMgr --> Security : "Decrypts Keys"
+
+ExecEngine --> Jupiter : "Quote API\nSwap API"
+ExecEngine --> Solana : "Transaction\nSubmission"
+ExecEngine --> Jito : "Bundle\nSubmission"
+Engine --> BirdEye : "Token Data\nPrice Feeds"
+WalletMgr --> Solana : "Balance\nQueries"
+
+Security --> Crypto : "Contains"
+Crypto --> KeyMgr : "Uses"
+
+note right of Engine
+  **200ms Tick Loop**
+  1. Update wallet balances (every 10s)
+  2. Process active strategies
+  3. Execute trades when conditions met
+  4. Emit real-time events to clients
+end note
+
+note left of Security
+  **Security Model**
+  - Keys encrypted with AES-256-GCM
+  - SECRET_KEY from environment
+  - In-memory decryption only
+  - Isolated burner wallets
+end note
+
+note bottom of DB
+  **Persistent State**
+  - Strategies (active/completed)
+  - Encrypted wallet keys
+  - System settings
+  - Trade logs
+end note
+
+@enduml

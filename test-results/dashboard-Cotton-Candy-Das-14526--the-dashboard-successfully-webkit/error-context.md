@@ -1,0 +1,3687 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Cotton Candy Bot" [ref=e5]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e10]:
+          - generic [ref=e11]: Cotton Candy
+          - generic [ref=e12]: Bot
+      - navigation [ref=e13]:
+        - link "Terminal" [ref=e14]:
+          - /url: /
+          - img [ref=e16]
+          - generic [ref=e18]: Terminal
+        - link "Strategies" [ref=e19]:
+          - /url: /strategies
+          - img [ref=e20]
+          - generic [ref=e22]: Strategies
+        - link "Wallet Lab" [ref=e23]:
+          - /url: /wallet-lab
+          - img [ref=e24]
+          - generic [ref=e28]: Wallet Lab
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e33]: NONE
+          - generic [ref=e34]:
+            - button [ref=e35] [cursor=pointer]:
+              - img [ref=e36]
+            - button [ref=e38] [cursor=pointer]:
+              - img [ref=e39]
+            - button [ref=e42] [cursor=pointer]:
+              - img [ref=e43]
+        - generic [ref=e45] [cursor=pointer]:
+          - button "Select Wallet" [ref=e48]
+          - generic:
+            - generic: PAPER
+            - generic:
+              - generic: $5.00
+            - generic:
+              - img "Wallet"
+        - link [ref=e50]:
+          - /url: /settings
+          - button [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+    - generic [ref=e55]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Portfolio" [level=3] [ref=e61]
+          - generic [ref=e62]: PAPER MODE
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - generic [ref=e69]: Available Balance
+              - generic [ref=e70]: $5.00
+            - img [ref=e71]
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e80]: Total Value
+              - generic [ref=e81]: $5.00
+            - img [ref=e82]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: 24h Performance
+            - generic [ref=e87]:
+              - img [ref=e88]
+              - text: +0.00%
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]: Realized PnL
+              - generic [ref=e96]: +$12.50
+            - generic [ref=e97]:
+              - generic [ref=e98]: Unrealized PnL
+              - generic [ref=e99]: "-$2.10"
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - text: Win Rate
+              - generic [ref=e107]: 68%
+      - generic [ref=e108]:
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "Active Positions" [level=3] [ref=e113]
+            - generic [ref=e114]: 0 TOKENS
+          - generic [ref=e116]:
+            - img [ref=e122]
+            - generic [ref=e124]:
+              - generic [ref=e125]: Market Scanning Active
+              - generic [ref=e126]: AI Agent watching for entry signals...
+        - generic [ref=e129]:
+          - generic [ref=e130]: PAPER P/L
+          - table [ref=e133]:
+            - row [ref=e134]:
+              - cell
+              - cell [ref=e135]:
+                - link "Charting by TradingView" [ref=e139]:
+                  - /url: https://www.tradingview.com/?utm_medium=lwc-link&utm_campaign=lwc-chart&utm_source=localhost/
+                  - img [ref=e140]
+              - cell [ref=e145]
+            - row [ref=e149]:
+              - cell
+              - cell [ref=e150]
+              - cell [ref=e154]
+      - generic [ref=e157]:
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - heading "TERMINAL" [level=2] [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]:
+                  - img [ref=e164]
+                  - text: TERMINAL
+                - img [ref=e167]
+            - button [ref=e169] [cursor=pointer]:
+              - img [ref=e170]
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - generic [ref=e178]: "[15:04:11]"
+                - generic [ref=e179]: "Client disconnected: IqMFrVAkqXGyBsEzAAB_"
+              - generic [ref=e180]:
+                - generic [ref=e181]: "[15:04:11]"
+                - generic [ref=e182]: "Engine heartbeat: No active strategies."
+              - generic [ref=e183]:
+                - generic [ref=e184]: "[15:04:11]"
+                - generic [ref=e185]: "Client connected: opgvl4aHHmpahGUfAACD"
+              - generic [ref=e186]:
+                - generic [ref=e187]: "[15:04:09]"
+                - generic [ref=e188]: "Client connected: _vNuX3LHAE05gDM1AACC"
+              - generic [ref=e189]:
+                - generic [ref=e190]: "[15:04:05]"
+                - generic [ref=e191]: "Client connected: IqMFrVAkqXGyBsEzAAB_"
+              - generic [ref=e192]:
+                - generic [ref=e193]: "[15:04:05]"
+                - generic [ref=e194]: "Client disconnected: 9HWFXWnlTBwlO3jyAAB5"
+              - generic [ref=e195]:
+                - generic [ref=e196]: "[15:04:05]"
+                - generic [ref=e197]: "Client connected: og9Zx47xE-ebl3s-AAB9"
+              - generic [ref=e198]:
+                - generic [ref=e199]: "[15:04:04]"
+                - generic [ref=e200]: "Client connected: cUaFEcg-SG9L2McEAAB8"
+            - generic [ref=e202]:
+              - generic [ref=e205]: Live Feed
+              - generic [ref=e206]: "Connection: http://localhost:3021"
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - generic [ref=e209]: System Logs
+            - button "Maximize" [ref=e210] [cursor=pointer]:
+              - img [ref=e211]
+          - generic [ref=e216]:
+            - paragraph [ref=e217]:
+              - generic [ref=e218]: "[3:04:11 PM]"
+              - text: "Client disconnected: IqMFrVAkqXGyBsEzAAB_"
+            - paragraph [ref=e219]:
+              - generic [ref=e220]: "[3:04:11 PM]"
+              - text: "Engine heartbeat: No active strategies."
+            - paragraph [ref=e221]:
+              - generic [ref=e222]: "[3:04:11 PM]"
+              - text: "Client connected: opgvl4aHHmpahGUfAACD"
+            - paragraph [ref=e223]:
+              - generic [ref=e224]: "[3:04:09 PM]"
+              - text: "Client connected: _vNuX3LHAE05gDM1AACC"
+            - paragraph [ref=e225]:
+              - generic [ref=e226]: "[3:04:05 PM]"
+              - text: "Client connected: IqMFrVAkqXGyBsEzAAB_"
+            - paragraph [ref=e227]:
+              - generic [ref=e228]: "[3:04:05 PM]"
+              - text: "Client disconnected: 9HWFXWnlTBwlO3jyAAB5"
+            - paragraph [ref=e229]:
+              - generic [ref=e230]: "[3:04:05 PM]"
+              - text: "Client connected: og9Zx47xE-ebl3s-AAB9"
+            - paragraph [ref=e231]:
+              - generic [ref=e232]: "[3:04:04 PM]"
+              - text: "Client connected: cUaFEcg-SG9L2McEAAB8"
+  - generic:
+    - generic:
+      - img
+      - generic: Live Feed
+    - generic:
+      - generic:
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDT
+          - generic: $0.999539
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDC
+          - generic: $0.999809
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $132.21
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WBTC
+          - generic: $89844.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LINK
+          - generic: $13.35
+          - generic:
+            - img
+            - generic: 6.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDS
+          - generic: $0.999587
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CBBTC
+          - generic: $90036.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDE
+          - generic: $0.999644
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WLFI
+          - generic: $0.152791
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYUSD
+          - generic: $0.999813
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SUSDE
+          - generic: $1.21
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USD1
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JITOSOL
+          - generic: $165.25
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BUIDL
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $132.03
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USYC
+          - generic: $1.11
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JLP
+          - generic: $4.66
+          - generic:
+            - img
+            - generic: 2.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDG
+          - generic: $0.999666
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BNSOL
+          - generic: $144.14
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SYRUPUSDC
+          - generic: $1.14
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PUMP
+          - generic: $0.002257
+          - generic:
+            - img
+            - generic: 9.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TRUMP
+          - generic: $5.02
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LBTC
+          - generic: $90159.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOLVBTC
+          - generic: $89906.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OUSG
+          - generic: $113.85
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONK
+          - generic: $0.000009
+          - generic:
+            - img
+            - generic: 13.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RENDER
+          - generic: $1.52
+          - generic:
+            - img
+            - generic: 11.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BDX
+          - generic: $0.095396
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDY
+          - generic: $1.10
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CAKE
+          - generic: $2.01
+          - generic:
+            - img
+            - generic: 1.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PENGU
+          - generic: $0.010763
+          - generic:
+            - img
+            - generic: 16.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUP
+          - generic: $0.210366
+          - generic:
+            - img
+            - generic: 6.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUPSOL
+          - generic: $153.08
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CTM
+          - generic: $0.127586
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TBTC
+          - generic: $90032.00
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SPX
+          - generic: $0.559369
+          - generic:
+            - img
+            - generic: 12.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VIRTUAL
+          - generic: $0.767046
+          - generic:
+            - img
+            - generic: 11.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MSOL
+          - generic: $178.13
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 2Z
+          - generic: $0.128290
+          - generic:
+            - img
+            - generic: 3.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WAPE
+          - generic: $0.217394
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PIPPIN
+          - generic: $0.383732
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: EURC
+          - generic: $1.17
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTH
+          - generic: $0.062857
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OHM
+          - generic: $21.92
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BAT
+          - generic: $0.222996
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FARTCOIN
+          - generic: $0.329147
+          - generic:
+            - img
+            - generic: 15.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WIF
+          - generic: $0.322831
+          - generic:
+            - img
+            - generic: 10.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HNT
+          - generic: $1.67
+          - generic:
+            - img
+            - generic: 10.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USX
+          - generic: $0.999051
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RAY
+          - generic: $1.06
+          - generic:
+            - img
+            - generic: 9.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GTBTC
+          - generic: $90118.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BORG
+          - generic: $0.261231
+          - generic:
+            - img
+            - generic: 7.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZBCN
+          - generic: $0.002522
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BBSOL
+          - generic: $149.83
+          - generic:
+            - img
+            - generic: 6.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DSOL
+          - generic: $152.73
+          - generic:
+            - img
+            - generic: 4.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FLUID
+          - generic: $2.85
+          - generic:
+            - img
+            - generic: 5.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: KMNO
+          - generic: $0.060689
+          - generic:
+            - img
+            - generic: 7.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AUSD
+          - generic: $0.999567
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LION
+          - generic: $0.006994
+          - generic:
+            - img
+            - generic: 3.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VSOL
+          - generic: $148.85
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JTO
+          - generic: $0.449695
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: W
+          - generic: $0.036116
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XSOLVBTC
+          - generic: $89040.00
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WYLDS
+          - generic: $0.999481
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PRIME
+          - generic: $1.01
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JSOL
+          - generic: $173.97
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ATH
+          - generic: $0.009941
+          - generic:
+            - img
+            - generic: 10.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOETH
+          - generic: $325.57
+          - generic:
+            - img
+            - generic: 9.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DUSD
+          - generic: $0.998795
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BRBTC
+          - generic: $84636.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PSOL
+          - generic: $138.58
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BSOL
+          - generic: $167.19
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GRASS
+          - generic: $0.312354
+          - generic:
+            - img
+            - generic: 5.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MET
+          - generic: $0.282398
+          - generic:
+            - img
+            - generic: 10.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: UNIBTC
+          - generic: $89272.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ACRED
+          - generic: $1086.06
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BABYDOGE
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 8.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DREAM
+          - generic: $0.000019
+          - generic:
+            - img
+            - generic: 21.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FRXUSD
+          - generic: $0.999812
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PSTUSDC
+          - generic: $1.07
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: REKT
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 19.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MELANIA
+          - generic: $0.121892
+          - generic:
+            - img
+            - generic: 4.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DOG
+          - generic: $0.001082
+          - generic:
+            - img
+            - generic: 10.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WSRUSD
+          - generic: $1.05
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ALCH
+          - generic: $0.118052
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: T
+          - generic: $0.008838
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORDI
+          - generic: $4.55
+          - generic:
+            - img
+            - generic: 1.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DRIFT
+          - generic: $0.170918
+          - generic:
+            - img
+            - generic: 7.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CASH
+          - generic: $0.999661
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ME
+          - generic: $0.214837
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POPCAT
+          - generic: $0.092932
+          - generic:
+            - img
+            - generic: 13.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LUX
+          - generic: $0.000908
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USELESS
+          - generic: $0.089979
+          - generic:
+            - img
+            - generic: 21.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SUSHI
+          - generic: $0.329473
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NPC
+          - generic: $0.011027
+          - generic:
+            - img
+            - generic: 13.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TDCCP
+          - generic: $0.138397
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WGLUE
+          - generic: $0.088383
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MEW
+          - generic: $0.000970
+          - generic:
+            - img
+            - generic: 9.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZIG
+          - generic: $0.060125
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BIO
+          - generic: $0.047298
+          - generic:
+            - img
+            - generic: 3.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PNUT
+          - generic: $0.082253
+          - generic:
+            - img
+            - generic: 12.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VBILL
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BC
+          - generic: $0.007941
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MOODENG
+          - generic: $0.078676
+          - generic:
+            - img
+            - generic: 9.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: EURCV
+          - generic: $1.17
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SWOP
+          - generic: $0.007690
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BAN
+          - generic: $0.074873
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ONYC
+          - generic: $1.06
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HSOL
+          - generic: $150.16
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DBR
+          - generic: $0.017720
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HOME
+          - generic: $0.022181
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XBTC
+          - generic: $90027.00
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORCA
+          - generic: $1.12
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DFDVSOL
+          - generic: $126.06
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JELLYJELLY
+          - generic: $0.062884
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GEOD
+          - generic: $0.140689
+          - generic:
+            - img
+            - generic: 0.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOHOME
+          - generic: $114.77
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FRAX
+          - generic: $0.630320
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOO
+          - generic: $0.028989
+          - generic:
+            - img
+            - generic: 1.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XAUT0
+          - generic: $4335.11
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WHITEWHALE
+          - generic: $0.053227
+          - generic:
+            - img
+            - generic: 24.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MARSMI
+          - generic: $0.050269
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TSLAX
+          - generic: $439.34
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTHIA
+          - generic: $0.049924
+          - generic:
+            - img
+            - generic: 2.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GMT
+          - generic: $0.015835
+          - generic:
+            - img
+            - generic: 3.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDP
+          - generic: $0.999668
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WMTX
+          - generic: $0.059278
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SDEX
+          - generic: $0.005075
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: YZY
+          - generic: $0.362074
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DOOD
+          - generic: $0.005915
+          - generic:
+            - img
+            - generic: 8.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: IO
+          - generic: $0.166536
+          - generic:
+            - img
+            - generic: 5.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BOME
+          - generic: $0.000636
+          - generic:
+            - img
+            - generic: 9.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOJAK
+          - generic: $0.043968
+          - generic:
+            - img
+            - generic: 47.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HONEY
+          - generic: $0.008247
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AIXBT
+          - generic: $0.042956
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AUDIO
+          - generic: $0.030085
+          - generic:
+            - img
+            - generic: 1.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WET
+          - generic: $0.180422
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GIGA
+          - generic: $0.004219
+          - generic:
+            - img
+            - generic: 9.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CLOUD
+          - generic: $0.076425
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: INF
+          - generic: $183.36
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORE
+          - generic: $95.49
+          - generic:
+            - img
+            - generic: 22.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOAT
+          - generic: $0.039398
+          - generic:
+            - img
+            - generic: 14.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ANA
+          - generic: $4.66
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CARV
+          - generic: $0.122331
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LAYER
+          - generic: $0.175947
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FIDA
+          - generic: $0.037226
+          - generic:
+            - img
+            - generic: 0.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CORN
+          - generic: $0.069875
+          - generic:
+            - img
+            - generic: 0.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RIF
+          - generic: $0.036298
+          - generic:
+            - img
+            - generic: 2.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HYUSD
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORDER
+          - generic: $0.099284
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AINTI
+          - generic: $0.033732
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ARC
+          - generic: $0.033580
+          - generic:
+            - img
+            - generic: 3.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AGI
+          - generic: $0.014748
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TROLL
+          - generic: $0.032805
+          - generic:
+            - img
+            - generic: 29.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SIX
+          - generic: $0.021719
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DEP
+          - generic: $0.001179
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CHEX
+          - generic: $0.032412
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AVICI
+          - generic: $2.50
+          - generic:
+            - img
+            - generic: 0.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MPLX
+          - generic: $0.057741
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOLF
+          - generic: $0.030975
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ELIZAOS
+          - generic: $0.004123
+          - generic:
+            - img
+            - generic: 11.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AMIKO
+          - generic: $0.038958
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OSAK
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VINE
+          - generic: $0.029616
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HOLO
+          - generic: $0.085095
+          - generic:
+            - img
+            - generic: 27.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SONIC
+          - generic: $0.081704
+          - generic:
+            - img
+            - generic: 8.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CPOOL
+          - generic: $0.033085
+          - generic:
+            - img
+            - generic: 2.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HYLOSOL
+          - generic: $135.92
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AURA
+          - generic: $0.029675
+          - generic:
+            - img
+            - generic: 14.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CGPT
+          - generic: $0.032674
+          - generic:
+            - img
+            - generic: 0.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ELON
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNDE
+          - generic: $0.050558
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ACT
+          - generic: $0.029280
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOLVBTC.JUP
+          - generic: $96570.00
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZEC
+          - generic: $483.60
+          - generic:
+            - img
+            - generic: 7.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TNSR
+          - generic: $0.080797
+          - generic:
+            - img
+            - generic: 1.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDU
+          - generic: $0.999737
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZEREBRO
+          - generic: $0.026864
+          - generic:
+            - img
+            - generic: 5.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BB
+          - generic: $0.065198
+          - generic:
+            - img
+            - generic: 10.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: INC
+          - generic: $0.004114
+          - generic:
+            - img
+            - generic: 7.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: STRX
+          - generic: $0.031008
+          - generic:
+            - img
+            - generic: 1.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OZA
+          - generic: $0.034212
+          - generic:
+            - img
+            - generic: 0.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CRT
+          - generic: $113.51
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONKSOL
+          - generic: $152.29
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 1-COIN-CAN-CHANGE-YOUR-LIFE
+          - generic: $0.025075
+          - generic:
+            - img
+            - generic: 19.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POKT
+          - generic: $0.012065
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: C98
+          - generic: $0.024188
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 0XY
+          - generic: $0.024019
+          - generic:
+            - img
+            - generic: 0.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BLESS
+          - generic: $0.012952
+          - generic:
+            - img
+            - generic: 3.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SKORAI
+          - generic: $0.043557
+          - generic:
+            - img
+            - generic: 1.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WILD
+          - generic: $0.048910
+          - generic:
+            - img
+            - generic: 6.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BULLISH
+          - generic: $0.023335
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ALI
+          - generic: $0.002531
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RBTC
+          - generic: $89272.00
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WFRAX
+          - generic: $0.626459
+          - generic:
+            - img
+            - generic: 0.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CRCLX
+          - generic: $83.64
+          - generic:
+            - img
+            - generic: 6.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: READY
+          - generic: $0.022052
+          - generic:
+            - img
+            - generic: 11.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNGO
+          - generic: $0.019701
+          - generic:
+            - img
+            - generic: 7.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GP
+          - generic: $0.638260
+          - generic:
+            - img
+            - generic: 45.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SSOL
+          - generic: $148.25
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OLAS
+          - generic: $0.093908
+          - generic:
+            - img
+            - generic: 3.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: KLED
+          - generic: $0.021517
+          - generic:
+            - img
+            - generic: 8.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AVA
+          - generic: $0.299411
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GRIFFAIN
+          - generic: $0.020822
+          - generic:
+            - img
+            - generic: 0.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CAT
+          - generic: $0.000003
+          - generic:
+            - img
+            - generic: 6.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USCR
+          - generic: $0.020340
+          - generic:
+            - img
+            - generic: 7.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DAKU
+          - generic: $0.033848
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ROAM
+          - generic: $0.060581
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOSANA
+          - generic: $0.226857
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CHILLGUY
+          - generic: $0.019905
+          - generic:
+            - img
+            - generic: 17.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XSOL
+          - generic: $0.598226
+          - generic:
+            - img
+            - generic: 17.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NVDAX
+          - generic: $188.65
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZBTC
+          - generic: $89953.00
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BERT
+          - generic: $0.019147
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CORGIAI
+          - generic: $0.000057
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ANON
+          - generic: $1.38
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LOOK
+          - generic: $0.019751
+          - generic:
+            - img
+            - generic: 7.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NOBODY
+          - generic: $0.019039
+          - generic:
+            - img
+            - generic: 28.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MCDULL
+          - generic: $0.000002
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GUN
+          - generic: $0.011891
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PONKE
+          - generic: $0.031392
+          - generic:
+            - img
+            - generic: 9.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ES
+          - generic: $0.115439
+          - generic:
+            - img
+            - generic: 12.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AITECH
+          - generic: $0.009765
+          - generic:
+            - img
+            - generic: 14.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: STSOL
+          - generic: $159.96
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WMON
+          - generic: $0.026597
+          - generic:
+            - img
+            - generic: 13.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NOS
+          - generic: $0.202965
+          - generic:
+            - img
+            - generic: 1.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SD
+          - generic: $0.238395
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PEPECOIN
+          - generic: $0.167263
+          - generic:
+            - img
+            - generic: 16.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PORTAL
+          - generic: $0.021487
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RIO
+          - generic: $0.159905
+          - generic:
+            - img
+            - generic: 3.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WCT
+          - generic: $0.084376
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SURGE
+          - generic: $0.031470
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SPSC
+          - generic: $0.015282
+          - generic:
+            - img
+            - generic: 19.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SWARMS
+          - generic: $0.015256
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: UMBRA
+          - generic: $1.51
+          - generic:
+            - img
+            - generic: 5.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: APU
+          - generic: $0.000044
+          - generic:
+            - img
+            - generic: 13.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TRX
+          - generic: $0.287355
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: IDLE
+          - generic: $0.002961
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CARDS
+          - generic: $0.054627
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MOBILE
+          - generic: $0.000223
+          - generic:
+            - img
+            - generic: 10.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: L3
+          - generic: $0.012277
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNSRY
+          - generic: $0.015357
+          - generic:
+            - img
+            - generic: 2.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: QKA
+          - generic: $0.434477
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NEURAL
+          - generic: $1.37
+          - generic:
+            - img
+            - generic: 12.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FKH
+          - generic: $0.014055
+          - generic:
+            - img
+            - generic: 13.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NEON
+          - generic: $0.057078
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYBOBO
+          - generic: $0.000818
+          - generic:
+            - img
+            - generic: 0.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TAI
+          - generic: $0.023223
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOOGLX
+          - generic: $314.82
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PALMO
+          - generic: $0.005263
+          - generic:
+            - img
+            - generic: 3.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDT
+          - generic: $0.999539
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDC
+          - generic: $0.999809
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $132.21
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WBTC
+          - generic: $89844.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LINK
+          - generic: $13.35
+          - generic:
+            - img
+            - generic: 6.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDS
+          - generic: $0.999587
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CBBTC
+          - generic: $90036.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDE
+          - generic: $0.999644
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WLFI
+          - generic: $0.152791
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYUSD
+          - generic: $0.999813
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SUSDE
+          - generic: $1.21
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USD1
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JITOSOL
+          - generic: $165.25
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BUIDL
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $132.03
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USYC
+          - generic: $1.11
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JLP
+          - generic: $4.66
+          - generic:
+            - img
+            - generic: 2.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDG
+          - generic: $0.999666
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BNSOL
+          - generic: $144.14
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SYRUPUSDC
+          - generic: $1.14
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PUMP
+          - generic: $0.002257
+          - generic:
+            - img
+            - generic: 9.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TRUMP
+          - generic: $5.02
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LBTC
+          - generic: $90159.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOLVBTC
+          - generic: $89906.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OUSG
+          - generic: $113.85
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONK
+          - generic: $0.000009
+          - generic:
+            - img
+            - generic: 13.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RENDER
+          - generic: $1.52
+          - generic:
+            - img
+            - generic: 11.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BDX
+          - generic: $0.095396
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDY
+          - generic: $1.10
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CAKE
+          - generic: $2.01
+          - generic:
+            - img
+            - generic: 1.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PENGU
+          - generic: $0.010763
+          - generic:
+            - img
+            - generic: 16.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUP
+          - generic: $0.210366
+          - generic:
+            - img
+            - generic: 6.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUPSOL
+          - generic: $153.08
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CTM
+          - generic: $0.127586
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TBTC
+          - generic: $90032.00
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SPX
+          - generic: $0.559369
+          - generic:
+            - img
+            - generic: 12.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VIRTUAL
+          - generic: $0.767046
+          - generic:
+            - img
+            - generic: 11.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MSOL
+          - generic: $178.13
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 2Z
+          - generic: $0.128290
+          - generic:
+            - img
+            - generic: 3.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WAPE
+          - generic: $0.217394
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PIPPIN
+          - generic: $0.383732
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: EURC
+          - generic: $1.17
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTH
+          - generic: $0.062857
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OHM
+          - generic: $21.92
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BAT
+          - generic: $0.222996
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FARTCOIN
+          - generic: $0.329147
+          - generic:
+            - img
+            - generic: 15.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WIF
+          - generic: $0.322831
+          - generic:
+            - img
+            - generic: 10.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HNT
+          - generic: $1.67
+          - generic:
+            - img
+            - generic: 10.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USX
+          - generic: $0.999051
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RAY
+          - generic: $1.06
+          - generic:
+            - img
+            - generic: 9.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GTBTC
+          - generic: $90118.00
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BORG
+          - generic: $0.261231
+          - generic:
+            - img
+            - generic: 7.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZBCN
+          - generic: $0.002522
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BBSOL
+          - generic: $149.83
+          - generic:
+            - img
+            - generic: 6.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DSOL
+          - generic: $152.73
+          - generic:
+            - img
+            - generic: 4.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FLUID
+          - generic: $2.85
+          - generic:
+            - img
+            - generic: 5.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: KMNO
+          - generic: $0.060689
+          - generic:
+            - img
+            - generic: 7.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AUSD
+          - generic: $0.999567
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LION
+          - generic: $0.006994
+          - generic:
+            - img
+            - generic: 3.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VSOL
+          - generic: $148.85
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JTO
+          - generic: $0.449695
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: W
+          - generic: $0.036116
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XSOLVBTC
+          - generic: $89040.00
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WYLDS
+          - generic: $0.999481
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PRIME
+          - generic: $1.01
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JSOL
+          - generic: $173.97
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ATH
+          - generic: $0.009941
+          - generic:
+            - img
+            - generic: 10.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOETH
+          - generic: $325.57
+          - generic:
+            - img
+            - generic: 9.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DUSD
+          - generic: $0.998795
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BRBTC
+          - generic: $84636.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PSOL
+          - generic: $138.58
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BSOL
+          - generic: $167.19
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GRASS
+          - generic: $0.312354
+          - generic:
+            - img
+            - generic: 5.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MET
+          - generic: $0.282398
+          - generic:
+            - img
+            - generic: 10.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: UNIBTC
+          - generic: $89272.00
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ACRED
+          - generic: $1086.06
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BABYDOGE
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 8.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DREAM
+          - generic: $0.000019
+          - generic:
+            - img
+            - generic: 21.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FRXUSD
+          - generic: $0.999812
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PSTUSDC
+          - generic: $1.07
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: REKT
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 19.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MELANIA
+          - generic: $0.121892
+          - generic:
+            - img
+            - generic: 4.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DOG
+          - generic: $0.001082
+          - generic:
+            - img
+            - generic: 10.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WSRUSD
+          - generic: $1.05
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ALCH
+          - generic: $0.118052
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: T
+          - generic: $0.008838
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORDI
+          - generic: $4.55
+          - generic:
+            - img
+            - generic: 1.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DRIFT
+          - generic: $0.170918
+          - generic:
+            - img
+            - generic: 7.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CASH
+          - generic: $0.999661
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ME
+          - generic: $0.214837
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POPCAT
+          - generic: $0.092932
+          - generic:
+            - img
+            - generic: 13.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LUX
+          - generic: $0.000908
+          - generic:
+            - img
+            - generic: 1.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USELESS
+          - generic: $0.089979
+          - generic:
+            - img
+            - generic: 21.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SUSHI
+          - generic: $0.329473
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NPC
+          - generic: $0.011027
+          - generic:
+            - img
+            - generic: 13.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TDCCP
+          - generic: $0.138397
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WGLUE
+          - generic: $0.088383
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MEW
+          - generic: $0.000970
+          - generic:
+            - img
+            - generic: 9.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZIG
+          - generic: $0.060125
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BIO
+          - generic: $0.047298
+          - generic:
+            - img
+            - generic: 3.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PNUT
+          - generic: $0.082253
+          - generic:
+            - img
+            - generic: 12.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VBILL
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BC
+          - generic: $0.007941
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MOODENG
+          - generic: $0.078676
+          - generic:
+            - img
+            - generic: 9.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: EURCV
+          - generic: $1.17
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SWOP
+          - generic: $0.007690
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BAN
+          - generic: $0.074873
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ONYC
+          - generic: $1.06
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HSOL
+          - generic: $150.16
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DBR
+          - generic: $0.017720
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HOME
+          - generic: $0.022181
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XBTC
+          - generic: $90027.00
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORCA
+          - generic: $1.12
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DFDVSOL
+          - generic: $126.06
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JELLYJELLY
+          - generic: $0.062884
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GEOD
+          - generic: $0.140689
+          - generic:
+            - img
+            - generic: 0.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOHOME
+          - generic: $114.77
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FRAX
+          - generic: $0.630320
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOO
+          - generic: $0.028989
+          - generic:
+            - img
+            - generic: 1.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XAUT0
+          - generic: $4335.11
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WHITEWHALE
+          - generic: $0.053227
+          - generic:
+            - img
+            - generic: 24.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MARSMI
+          - generic: $0.050269
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TSLAX
+          - generic: $439.34
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTHIA
+          - generic: $0.049924
+          - generic:
+            - img
+            - generic: 2.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GMT
+          - generic: $0.015835
+          - generic:
+            - img
+            - generic: 3.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDP
+          - generic: $0.999668
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WMTX
+          - generic: $0.059278
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SDEX
+          - generic: $0.005075
+          - generic:
+            - img
+            - generic: 1.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: YZY
+          - generic: $0.362074
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DOOD
+          - generic: $0.005915
+          - generic:
+            - img
+            - generic: 8.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: IO
+          - generic: $0.166536
+          - generic:
+            - img
+            - generic: 5.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BOME
+          - generic: $0.000636
+          - generic:
+            - img
+            - generic: 9.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOJAK
+          - generic: $0.043968
+          - generic:
+            - img
+            - generic: 47.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HONEY
+          - generic: $0.008247
+          - generic:
+            - img
+            - generic: 2.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AIXBT
+          - generic: $0.042956
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AUDIO
+          - generic: $0.030085
+          - generic:
+            - img
+            - generic: 1.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WET
+          - generic: $0.180422
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GIGA
+          - generic: $0.004219
+          - generic:
+            - img
+            - generic: 9.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CLOUD
+          - generic: $0.076425
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: INF
+          - generic: $183.36
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORE
+          - generic: $95.49
+          - generic:
+            - img
+            - generic: 22.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOAT
+          - generic: $0.039398
+          - generic:
+            - img
+            - generic: 14.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ANA
+          - generic: $4.66
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CARV
+          - generic: $0.122331
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LAYER
+          - generic: $0.175947
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FIDA
+          - generic: $0.037226
+          - generic:
+            - img
+            - generic: 0.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CORN
+          - generic: $0.069875
+          - generic:
+            - img
+            - generic: 0.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RIF
+          - generic: $0.036298
+          - generic:
+            - img
+            - generic: 2.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HYUSD
+          - generic: $1.00
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ORDER
+          - generic: $0.099284
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AINTI
+          - generic: $0.033732
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ARC
+          - generic: $0.033580
+          - generic:
+            - img
+            - generic: 3.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AGI
+          - generic: $0.014748
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TROLL
+          - generic: $0.032805
+          - generic:
+            - img
+            - generic: 29.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SIX
+          - generic: $0.021719
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DEP
+          - generic: $0.001179
+          - generic:
+            - img
+            - generic: 0.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CHEX
+          - generic: $0.032412
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AVICI
+          - generic: $2.50
+          - generic:
+            - img
+            - generic: 0.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MPLX
+          - generic: $0.057741
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WOLF
+          - generic: $0.030975
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ELIZAOS
+          - generic: $0.004123
+          - generic:
+            - img
+            - generic: 11.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AMIKO
+          - generic: $0.038958
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OSAK
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: VINE
+          - generic: $0.029616
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HOLO
+          - generic: $0.085095
+          - generic:
+            - img
+            - generic: 27.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SONIC
+          - generic: $0.081704
+          - generic:
+            - img
+            - generic: 8.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CPOOL
+          - generic: $0.033085
+          - generic:
+            - img
+            - generic: 2.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: HYLOSOL
+          - generic: $135.92
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AURA
+          - generic: $0.029675
+          - generic:
+            - img
+            - generic: 14.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CGPT
+          - generic: $0.032674
+          - generic:
+            - img
+            - generic: 0.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ELON
+          - generic: $0.000000
+          - generic:
+            - img
+            - generic: 4.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNDE
+          - generic: $0.050558
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ACT
+          - generic: $0.029280
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOLVBTC.JUP
+          - generic: $96570.00
+          - generic:
+            - img
+            - generic: 2.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZEC
+          - generic: $483.60
+          - generic:
+            - img
+            - generic: 7.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TNSR
+          - generic: $0.080797
+          - generic:
+            - img
+            - generic: 1.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USDU
+          - generic: $0.999737
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZEREBRO
+          - generic: $0.026864
+          - generic:
+            - img
+            - generic: 5.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BB
+          - generic: $0.065198
+          - generic:
+            - img
+            - generic: 10.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: INC
+          - generic: $0.004114
+          - generic:
+            - img
+            - generic: 7.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: STRX
+          - generic: $0.031008
+          - generic:
+            - img
+            - generic: 1.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OZA
+          - generic: $0.034212
+          - generic:
+            - img
+            - generic: 0.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CRT
+          - generic: $113.51
+          - generic:
+            - img
+            - generic: 0.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONKSOL
+          - generic: $152.29
+          - generic:
+            - img
+            - generic: 5.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 1-COIN-CAN-CHANGE-YOUR-LIFE
+          - generic: $0.025075
+          - generic:
+            - img
+            - generic: 19.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POKT
+          - generic: $0.012065
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: C98
+          - generic: $0.024188
+          - generic:
+            - img
+            - generic: 2.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: 0XY
+          - generic: $0.024019
+          - generic:
+            - img
+            - generic: 0.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BLESS
+          - generic: $0.012952
+          - generic:
+            - img
+            - generic: 3.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SKORAI
+          - generic: $0.043557
+          - generic:
+            - img
+            - generic: 1.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WILD
+          - generic: $0.048910
+          - generic:
+            - img
+            - generic: 6.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BULLISH
+          - generic: $0.023335
+          - generic:
+            - img
+            - generic: 3.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ALI
+          - generic: $0.002531
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RBTC
+          - generic: $89272.00
+          - generic:
+            - img
+            - generic: 2.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WFRAX
+          - generic: $0.626459
+          - generic:
+            - img
+            - generic: 0.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CRCLX
+          - generic: $83.64
+          - generic:
+            - img
+            - generic: 6.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: READY
+          - generic: $0.022052
+          - generic:
+            - img
+            - generic: 11.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNGO
+          - generic: $0.019701
+          - generic:
+            - img
+            - generic: 7.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GP
+          - generic: $0.638260
+          - generic:
+            - img
+            - generic: 45.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SSOL
+          - generic: $148.25
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: OLAS
+          - generic: $0.093908
+          - generic:
+            - img
+            - generic: 3.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: KLED
+          - generic: $0.021517
+          - generic:
+            - img
+            - generic: 8.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AVA
+          - generic: $0.299411
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GRIFFAIN
+          - generic: $0.020822
+          - generic:
+            - img
+            - generic: 0.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CAT
+          - generic: $0.000003
+          - generic:
+            - img
+            - generic: 6.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: USCR
+          - generic: $0.020340
+          - generic:
+            - img
+            - generic: 7.6%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: DAKU
+          - generic: $0.033848
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ROAM
+          - generic: $0.060581
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOSANA
+          - generic: $0.226857
+          - generic:
+            - img
+            - generic: 5.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CHILLGUY
+          - generic: $0.019905
+          - generic:
+            - img
+            - generic: 17.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: XSOL
+          - generic: $0.598226
+          - generic:
+            - img
+            - generic: 17.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NVDAX
+          - generic: $188.65
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ZBTC
+          - generic: $89953.00
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BERT
+          - generic: $0.019147
+          - generic:
+            - img
+            - generic: 10.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CORGIAI
+          - generic: $0.000057
+          - generic:
+            - img
+            - generic: 2.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ANON
+          - generic: $1.38
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: LOOK
+          - generic: $0.019751
+          - generic:
+            - img
+            - generic: 7.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NOBODY
+          - generic: $0.019039
+          - generic:
+            - img
+            - generic: 28.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MCDULL
+          - generic: $0.000002
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GUN
+          - generic: $0.011891
+          - generic:
+            - img
+            - generic: 5.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PONKE
+          - generic: $0.031392
+          - generic:
+            - img
+            - generic: 9.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: ES
+          - generic: $0.115439
+          - generic:
+            - img
+            - generic: 12.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: AITECH
+          - generic: $0.009765
+          - generic:
+            - img
+            - generic: 14.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: STSOL
+          - generic: $159.96
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WMON
+          - generic: $0.026597
+          - generic:
+            - img
+            - generic: 13.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NOS
+          - generic: $0.202965
+          - generic:
+            - img
+            - generic: 1.8%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SD
+          - generic: $0.238395
+          - generic:
+            - img
+            - generic: 4.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PEPECOIN
+          - generic: $0.167263
+          - generic:
+            - img
+            - generic: 16.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PORTAL
+          - generic: $0.021487
+          - generic:
+            - img
+            - generic: 3.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: RIO
+          - generic: $0.159905
+          - generic:
+            - img
+            - generic: 3.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WCT
+          - generic: $0.084376
+          - generic:
+            - img
+            - generic: 0.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SURGE
+          - generic: $0.031470
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SPSC
+          - generic: $0.015282
+          - generic:
+            - img
+            - generic: 19.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SWARMS
+          - generic: $0.015256
+          - generic:
+            - img
+            - generic: 5.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: UMBRA
+          - generic: $1.51
+          - generic:
+            - img
+            - generic: 5.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: APU
+          - generic: $0.000044
+          - generic:
+            - img
+            - generic: 13.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TRX
+          - generic: $0.287355
+          - generic:
+            - img
+            - generic: 1.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: IDLE
+          - generic: $0.002961
+          - generic:
+            - img
+            - generic: 4.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: CARDS
+          - generic: $0.054627
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MOBILE
+          - generic: $0.000223
+          - generic:
+            - img
+            - generic: 10.0%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: L3
+          - generic: $0.012277
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MNSRY
+          - generic: $0.015357
+          - generic:
+            - img
+            - generic: 2.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: QKA
+          - generic: $0.434477
+          - generic:
+            - img
+            - generic: 1.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NEURAL
+          - generic: $1.37
+          - generic:
+            - img
+            - generic: 12.7%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: FKH
+          - generic: $0.014055
+          - generic:
+            - img
+            - generic: 13.3%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: NEON
+          - generic: $0.057078
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYBOBO
+          - generic: $0.000818
+          - generic:
+            - img
+            - generic: 0.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: TAI
+          - generic: $0.023223
+          - generic:
+            - img
+            - generic: 6.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: GOOGLX
+          - generic: $314.82
+          - generic:
+            - img
+            - generic: 0.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PALMO
+          - generic: $0.005263
+          - generic:
+            - img
+            - generic: 3.8%
+  - button "Open Next.js Dev Tools" [ref=e240] [cursor=pointer]:
+    - img [ref=e241]
+  - alert [ref=e246]
+```

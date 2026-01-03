@@ -1,0 +1,45 @@
+sequenceDiagram
+    participant User
+    participant Dashboard
+    participant Server
+    participant Engine
+    participant Jupiter
+    participant Jito
+    participant Solana
+
+    %% Initialization
+    User->>Dashboard: Connect Wallet
+    Dashboard->>Server: Connect (Socket.io)
+    Server-->>Dashboard: Initial State (Wallets, Strategies)
+
+    %% Strategy Creation
+    User->>Dashboard: Create Strategy (e.g., Snipe)
+    Dashboard->>Server: emit('create_strategy', config)
+    Server->>Engine: Register Strategy
+    Engine->>Solana: Subscribe to Logs (e.g., Raydium)
+    Server-->>Dashboard: Strategy Created (Pending)
+
+    %% Execution Loop (Tick)
+    loop Every 200ms
+        Engine->>Solana: Check Price / Liquidity
+        alt Condition Met
+            Engine->>Jupiter: Get Quote
+            Jupiter-->>Engine: Best Route
+            Engine->>Engine: Sign Transaction (Burner Wallet)
+            
+            par MEV Protection
+                Engine->>Jito: Send Bundle (Tx + Tip)
+            and Standard
+                Engine->>Solana: Send Transaction
+            end
+
+            alt Success
+                Solana-->>Engine: Confirm Transaction
+                Engine->>Server: Record Trade
+                Server-->>Dashboard: emit('trade_execution', details)
+            else Failure
+                Solana-->>Engine: Error / Timeout
+                Server-->>Dashboard: emit('error', details)
+            end
+        end
+    end

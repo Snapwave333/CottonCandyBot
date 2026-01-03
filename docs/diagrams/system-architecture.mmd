@@ -1,0 +1,51 @@
+graph TB
+    subgraph "Client Side"
+        Browser[User Browser]
+        Frontend[Next.js Frontend]
+        Zustand[Zustand Store]
+        SocketClient[Socket.io Client]
+    end
+
+    subgraph "Server Side"
+        Server[Node.js Server]
+        Engine[Trading Engine]
+        WalletMgr[Wallet Manager]
+        SocketServer[Socket.io Server]
+        LowDB[(LowDB Database)]
+    end
+
+    subgraph "External Services"
+        RPC[Solana RPC Node]
+        Jito[Jito Block Engine]
+        Jupiter[Jupiter Aggregator]
+        BirdEye[BirdEye Data API]
+    end
+
+    %% Client Connections
+    Browser -->|Interacts| Frontend
+    Frontend -->|State Updates| Zustand
+    Frontend -->|Events| SocketClient
+    SocketClient <-->|WebSocket| SocketServer
+
+    %% Server Internal
+    SocketServer -->|Commands| Server
+    Server -->|Controls| Engine
+    Server -->|Manage Keys| WalletMgr
+    Engine -->|Persist Data| LowDB
+    WalletMgr -->|Encrypt/Decrypt| LowDB
+
+    %% External Connections
+    Engine -->|Get Price| RPC
+    Engine -->|Get Price| BirdEye
+    Engine -->|Get Quote| Jupiter
+    WalletMgr -->|Sign Tx| Engine
+    Engine -->|Send Bundle| Jito
+    Engine -->|Send Tx| RPC
+
+    classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef server fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef external fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+
+    class Browser,Frontend,Zustand,SocketClient client;
+    class Server,Engine,WalletMgr,SocketServer,LowDB server;
+    class RPC,Jito,Jupiter,BirdEye external;

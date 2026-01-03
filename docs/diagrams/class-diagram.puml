@@ -1,0 +1,230 @@
+@startuml Cotton Candy Bot - Class Diagram
+!theme blueprint
+
+' Meta information
+title Cotton Candy Bot - Domain Model (UML 2.5)
+footer Generated: 2025-12-29 | Version: 2.0.0 | Author: Documentation Team
+header Class Diagram - Core Domain Entities
+
+package "Domain Layer" {
+
+  class Engine {
+    - io: SocketIO
+    - isRunning: boolean
+    - tickRate: number = 200
+    - connection: Connection
+    - executionEngine: ExecutionEngine
+    - lastBalanceUpdate: number
+    --
+    + start(): Promise<void>
+    + stop(): void
+    + tick(): Promise<void>
+    + updateBalances(): Promise<void>
+    + processStrategy(strategy: Strategy): Promise<void>
+  }
+
+  class ExecutionEngine {
+    - connection: Connection
+    - io: SocketIO
+    --
+    + executeTrade(strategy: Strategy, quote: Quote): Promise<TradeResult>
+    + simulateTrade(strategy: Strategy, quote: Quote): Promise<TradeResult>
+    + executeLiveTrade(strategy: Strategy, quote: Quote): Promise<TradeResult>
+  }
+
+  abstract class Strategy {
+    # id: string
+    # type: StrategyType
+    # config: StrategyConfig
+    # status: StrategyStatus
+    # logs: StrategyLog[]
+    # createdAt: number
+    # lastExecution: number
+    --
+    + {abstract} evaluate(): boolean
+    + {abstract} execute(): Promise<void>
+    + pause(): void
+    + resume(): void
+    + addLog(message: string, type: LogType): void
+  }
+
+  class SniperStrategy extends Strategy {
+    - targetToken: string
+    - amountInSol: number
+    - monitoringActive: boolean
+    --
+    + evaluate(): boolean
+    + execute(): Promise<void>
+    - detectLiquidityAddition(): Promise<boolean>
+  }
+
+  class DCAStrategy extends Strategy {
+    - intervalMs: number
+    - totalAmount: number
+    - amountPerOrder: number
+    - executionCount: number
+    --
+    + evaluate(): boolean
+    + execute(): Promise<void>
+    - shouldExecuteNow(): boolean
+  }
+
+  class CustomStrategy extends Strategy {
+    - logicBlocks: LogicBlock[]
+    --
+    + evaluate(): boolean
+    + execute(): Promise<void>
+    - evaluateLogicBlock(block: LogicBlock): boolean
+  }
+
+  class BurnerWallet {
+    - publicKey: string
+    - encryptedKey: string
+    - label: string
+    - clusterId: string
+    - balance: number
+    - isPaper: boolean
+    --
+    + getBalance(): Promise<number>
+    + transfer(destination: string, amount: number): Promise<string>
+    + decrypt(secretKey: string): Keypair
+  }
+
+  class WalletCluster {
+    - id: string
+    - name: string
+    - color: string
+    - walletIds: string[]
+    --
+    + addWallet(wallet: BurnerWallet): void
+    + removeWallet(walletId: string): void
+    + getTotalBalance(): Promise<number>
+  }
+
+  class CryptoManager <<Singleton>> {
+    - secretKey: string
+    --
+    + {static} getInstance(): CryptoManager
+    + encrypt(privateKey: string): string
+    + decrypt(encryptedKey: string): string
+    + generateIV(): Buffer
+  }
+
+  class Database <<Singleton>> {
+    - db: LowdbAsync
+    - data: DatabaseSchema
+    --
+    + {static} getInstance(): Promise<Database>
+    + read(): Promise<void>
+    + write(): Promise<void>
+    + getStrategies(): Strategy[]
+    + getWallets(): BurnerWallet[]
+    + getSettings(): Settings
+  }
+
+  class StrategyConfig {
+    + targetToken: string
+    + amountInSol: number
+    + intervalSeconds?: number
+    + dipThresholdPercent?: number
+    + targetWallet?: string
+    + customLogic?: LogicBlock[]
+    + stopLossPercent?: number
+    + takeProfitPercent?: number
+  }
+
+  class LogicBlock {
+    + trigger: string
+    + condition: Condition
+    + value: number
+    + action: Action
+    + amount?: number
+  }
+
+  class StrategyLog {
+    + timestamp: number
+    + message: string
+    + type: LogType
+  }
+
+  enum StrategyType {
+    SNIPER
+    DCA
+    DIP_CATCHER
+    MOMENTUM
+    COPYCAT
+    CUSTOM
+  }
+
+  enum StrategyStatus {
+    IDLE
+    RUNNING
+    PAUSED
+    COMPLETED
+    FAILED
+  }
+
+  enum LogType {
+    INFO
+    SUCCESS
+    ERROR
+    WARNING
+  }
+
+  enum Condition {
+    GT
+    LT
+    EQ
+  }
+
+  enum Action {
+    BUY
+    SELL
+  }
+}
+
+' Relationships
+Engine *-- ExecutionEngine : contains
+Engine ..> Strategy : processes
+Engine ..> Database : uses
+ExecutionEngine ..> BurnerWallet : uses
+ExecutionEngine ..> CryptoManager : uses
+
+Strategy o-- StrategyConfig : has
+Strategy *-- StrategyLog : contains
+Strategy -- StrategyType : typed by
+Strategy -- StrategyStatus : has status
+
+CustomStrategy o-- LogicBlock : contains
+LogicBlock -- Condition : uses
+LogicBlock -- Action : specifies
+
+BurnerWallet -- WalletCluster : belongs to
+BurnerWallet ..> CryptoManager : uses for decryption
+
+StrategyLog -- LogType : categorized by
+
+note right of Engine
+  **Strategy Engine**
+  Core orchestrator running at 200ms intervals.
+  Responsible for:
+  - Strategy evaluation
+  - Balance monitoring
+  - Trade execution coordination
+end note
+
+note left of CryptoManager
+  **Encryption Service**
+  Singleton managing AES-256-GCM encryption.
+  SECRET_KEY loaded from environment.
+  Keys never stored in plain text.
+end note
+
+note bottom of Database
+  **Persistent Storage**
+  lowdb-based JSON storage.
+  Provides async read/write operations.
+  Single source of truth for application state.
+end note
+
+@enduml

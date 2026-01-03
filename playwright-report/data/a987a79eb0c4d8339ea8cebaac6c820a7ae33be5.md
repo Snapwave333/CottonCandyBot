@@ -1,0 +1,287 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Cotton Candy Bot" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e10]:
+          - generic [ref=e11]: Cotton Candy
+          - generic [ref=e12]: Bot
+      - navigation [ref=e13]:
+        - link "Terminal" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e16]
+          - generic [ref=e18]: Terminal
+        - link "Strategies" [ref=e19] [cursor=pointer]:
+          - /url: /strategies
+          - img [ref=e20]
+          - generic [ref=e22]: Strategies
+        - link "Wallet Lab" [ref=e23] [cursor=pointer]:
+          - /url: /wallet-lab
+          - img [ref=e24]
+          - generic [ref=e28]: Wallet Lab
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e33]: SNIPER
+          - generic [ref=e34]:
+            - button [ref=e35] [cursor=pointer]:
+              - img [ref=e36]
+            - button [ref=e38] [cursor=pointer]:
+              - img [ref=e39]
+            - button [ref=e42] [cursor=pointer]:
+              - img [ref=e43]
+        - generic [ref=e45] [cursor=pointer]:
+          - button "Select Wallet" [ref=e48]
+          - generic:
+            - generic: PAPER
+            - generic:
+              - generic: $100.00
+            - generic:
+              - img "Wallet"
+        - link [ref=e50] [cursor=pointer]:
+          - /url: /settings
+          - button [ref=e51]:
+            - img [ref=e52]
+    - generic [ref=e55]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Portfolio" [level=3] [ref=e61]
+          - generic [ref=e62]: PAPER MODE
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - generic [ref=e69]: Available Balance
+              - generic [ref=e70]: $100.00
+            - img [ref=e71]
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e80]: Total Value
+              - generic [ref=e81]: $100.00
+            - img [ref=e82]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: 24h Performance
+            - generic [ref=e87]:
+              - img [ref=e88]
+              - text: +0.00%
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]: Realized PnL
+              - generic [ref=e96]: +$12.50
+            - generic [ref=e97]:
+              - generic [ref=e98]: Unrealized PnL
+              - generic [ref=e99]: "-$2.10"
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - text: Win Rate
+              - generic [ref=e107]: 68%
+      - generic [ref=e108]:
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "Active Positions" [level=3] [ref=e113]
+            - generic [ref=e114]: 0 TOKENS
+          - generic [ref=e116]:
+            - img [ref=e122]
+            - generic [ref=e124]:
+              - generic [ref=e125]: Market Scanning Active
+              - generic [ref=e126]: AI Agent watching for entry signals...
+        - generic [ref=e129]:
+          - generic [ref=e130]: PAPER P/L
+          - table [ref=e133]:
+            - row [ref=e134]:
+              - cell
+              - cell [ref=e135]:
+                - link "Charting by TradingView" [ref=e139] [cursor=pointer]:
+                  - /url: https://www.tradingview.com/?utm_medium=lwc-link&utm_campaign=lwc-chart&utm_source=localhost/
+                  - img [ref=e140]
+              - cell [ref=e144]
+            - row [ref=e148]:
+              - cell
+              - cell [ref=e149]
+              - cell [ref=e153]
+      - generic [ref=e156]:
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - heading "TERMINAL" [level=2] [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - img [ref=e163]
+                  - text: TERMINAL
+                - img [ref=e166]
+            - button [ref=e168] [cursor=pointer]:
+              - img [ref=e169]
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]: "[15:04:09]"
+                - generic [ref=e178]: "Engine heartbeat: No active strategies."
+              - generic [ref=e179]:
+                - generic [ref=e180]: "[15:04:09]"
+                - generic [ref=e181]: "Client connected: opgvl4aHHmpahGUfAACD"
+              - generic [ref=e182]:
+                - generic [ref=e183]: "[15:04:08]"
+                - generic [ref=e184]: "Client connected: _vNuX3LHAE05gDM1AACC"
+              - generic [ref=e185]:
+                - generic [ref=e186]: "[15:04:06]"
+                - generic [ref=e187]: "Worker: Trading Loop Stopped"
+              - generic [ref=e188]:
+                - generic [ref=e189]: "[15:04:06]"
+                - generic [ref=e190]: "Worker: Trading Loop Stopped"
+              - generic [ref=e191]:
+                - generic [ref=e192]: "[15:04:05]"
+                - generic [ref=e193]: "Client connected: IqMFrVAkqXGyBsEzAAB_"
+            - generic [ref=e195]:
+              - generic [ref=e198]: Live Feed
+              - generic [ref=e199]: "Connection: http://localhost:3021"
+        - generic [ref=e200]:
+          - generic [ref=e201]:
+            - generic [ref=e202]: System Logs
+            - button "Maximize" [ref=e203] [cursor=pointer]:
+              - img [ref=e204]
+          - generic [ref=e209]:
+            - paragraph [ref=e210]:
+              - generic [ref=e211]: "[3:04:09 PM]"
+              - text: "Engine heartbeat: No active strategies."
+            - paragraph [ref=e212]:
+              - generic [ref=e213]: "[3:04:09 PM]"
+              - text: "Client connected: opgvl4aHHmpahGUfAACD"
+            - paragraph [ref=e214]:
+              - generic [ref=e215]: "[3:04:08 PM]"
+              - text: "Client connected: _vNuX3LHAE05gDM1AACC"
+            - paragraph [ref=e216]:
+              - generic [ref=e217]: "[3:04:06 PM]"
+              - text: "Worker: Trading Loop Stopped"
+            - paragraph [ref=e218]:
+              - generic [ref=e219]: "[3:04:06 PM]"
+              - text: "Worker: Trading Loop Stopped"
+            - paragraph [ref=e220]:
+              - generic [ref=e221]: "[3:04:05 PM]"
+              - text: "Client connected: IqMFrVAkqXGyBsEzAAB_"
+  - generic:
+    - generic:
+      - img
+      - generic: Live Feed
+    - generic:
+      - generic:
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $145.20
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONK
+          - generic: $0.000024
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WIF
+          - generic: $3.40
+          - generic:
+            - img
+            - generic: 12.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUP
+          - generic: $1.20
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POPCAT
+          - generic: $0.45
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BOME
+          - generic: $0.012
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MEW
+          - generic: $0.004
+          - generic:
+            - img
+            - generic: 15.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTH
+          - generic: $0.45
+          - generic:
+            - img
+            - generic: 0.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: SOL
+          - generic: $145.20
+          - generic:
+            - img
+            - generic: 4.5%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BONK
+          - generic: $0.000024
+          - generic:
+            - img
+            - generic: 2.1%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: WIF
+          - generic: $3.40
+          - generic:
+            - img
+            - generic: 12.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: JUP
+          - generic: $1.20
+          - generic:
+            - img
+            - generic: 1.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: POPCAT
+          - generic: $0.45
+          - generic:
+            - img
+            - generic: 8.9%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: BOME
+          - generic: $0.012
+          - generic:
+            - img
+            - generic: 5.4%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: MEW
+          - generic: $0.004
+          - generic:
+            - img
+            - generic: 15.2%
+        - generic:
+          - img "Meme Coin Fallback Icon"
+          - generic: PYTH
+          - generic: $0.45
+          - generic:
+            - img
+            - generic: 0.5%
+  - button "Open Next.js Dev Tools" [ref=e229] [cursor=pointer]:
+    - img [ref=e230]
+  - alert [ref=e233]
+```

@@ -1,0 +1,106 @@
+@startuml Cotton Candy Bot - Strategy State Machine
+!theme blueprint
+
+' Meta information
+title Cotton Candy Bot - Strategy Lifecycle (UML 2.5)
+footer Generated: 2025-12-29 | Version: 2.0.0 | Author: Documentation Team
+header State Machine Diagram - Strategy Execution States
+
+[*] --> CREATED : User creates strategy
+
+state "Strategy Lifecycle" as Lifecycle {
+  CREATED : Entry: Initialize config
+  CREATED : Do: Validate parameters
+  CREATED : Exit: Save to database
+
+  IDLE : Entry: Strategy configured
+  IDLE : Do: Wait for activation
+  IDLE : Exit: Mark as RUNNING
+
+  RUNNING : Entry: Start monitoring
+  RUNNING : Do: Evaluate conditions every tick
+  RUNNING : Exit: Cleanup resources
+
+  EXECUTING : Entry: Lock strategy
+  EXECUTING : Do: Execute trade
+  EXECUTING : Exit: Update last execution timestamp
+
+  PAUSED : Entry: Freeze evaluation
+  PAUSED : Do: Preserve state
+  PAUSED : Exit: Resume from checkpoint
+
+  COMPLETED : Entry: Mark success
+  COMPLETED : Do: Generate final report
+  COMPLETED : Exit: Archive logs
+
+  FAILED : Entry: Log error
+  FAILED : Do: Send alert
+  FAILED : Exit: Save error state
+
+  CREATED --> IDLE : Configuration validated
+  IDLE --> RUNNING : User starts strategy
+  IDLE --> [*] : User deletes strategy
+
+  RUNNING --> EXECUTING : Condition met
+  EXECUTING --> RUNNING : Trade completed\n[more executions pending]
+  EXECUTING --> COMPLETED : Trade completed\n[final execution]
+  EXECUTING --> FAILED : Trade failed\n[critical error]
+
+  RUNNING --> PAUSED : User pauses
+  RUNNING --> FAILED : Error during evaluation
+  RUNNING --> COMPLETED : All executions done\n[DCA completed]
+
+  PAUSED --> RUNNING : User resumes
+  PAUSED --> [*] : User deletes
+
+  FAILED --> IDLE : User resets
+  FAILED --> [*] : User deletes
+
+  COMPLETED --> [*] : User archives
+}
+
+note right of CREATED
+  **Initial State**
+  Strategy configuration parsed
+  Validation rules applied:
+  - Target token exists
+  - Amount > 0
+  - Interval valid (DCA)
+end note
+
+note right of RUNNING
+  **Active Monitoring**
+  Engine evaluates at 200ms intervals:
+  - DCA: Check time elapsed
+  - Sniper: Monitor liquidity
+  - Custom: Evaluate logic blocks
+end note
+
+note right of EXECUTING
+  **Trade Execution**
+  Atomic operation:
+  1. Fetch quote (Jupiter)
+  2. Build transaction
+  3. Sign with burner wallet
+  4. Submit (Jito or direct)
+  5. Confirm on-chain
+end note
+
+note left of PAUSED
+  **Suspended State**
+  - No evaluation occurs
+  - State preserved
+  - Can resume anytime
+  - Useful for market volatility
+end note
+
+note left of FAILED
+  **Error Handling**
+  Reasons for failure:
+  - RPC timeout
+  - Insufficient funds
+  - Slippage exceeded
+  - Network congestion
+end note
+
+@enduml
