@@ -252,7 +252,7 @@ graph TB
     end
 
     subgraph "Blockchain Network"
-        RPC[RPC Node (Helius/QuickNode)]
+        RPC["RPC Node (Helius/QuickNode)"]
         Jito[Jito Block Engine]
     end
 
