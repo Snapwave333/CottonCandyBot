@@ -6,9 +6,14 @@ echo.
 
 :: Check for .env file
 if not exist ".env" (
-    echo [ERROR] .env file not found. Please run install.bat first or create .env manually.
-    pause
-    exit /b 1
+    if exist ".env.example" (
+        echo [WARN] .env file not found. Creating from .env.example...
+        copy ".env.example" ".env" >nul
+    ) else (
+        echo [ERROR] .env file not found. Please run install.bat first or create .env manually.
+        pause
+        exit /b 1
+    )
 )
 
 :: Start Backend

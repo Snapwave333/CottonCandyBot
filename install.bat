@@ -71,6 +71,14 @@ echo [4/8] Deploying application files...
 set "SRC_DIR=%~dp0"
 xcopy "%SRC_DIR%*" "%INSTALL_DIR%\" /E /H /Y /I >> "%LOG_FILE%" 2>&1 || (set "EXIT_CODE=4" & goto :ROLLBACK)
 
+:: Create .env if missing
+if not exist "%INSTALL_DIR%\.env" (
+    if exist "%INSTALL_DIR%\.env.example" (
+        echo [INFO] Creating .env from template...
+        copy "%INSTALL_DIR%\.env.example" "%INSTALL_DIR%\.env" >nul
+    )
+)
+
 :: 5. Registry Registration
 echo [5/8] Registering application...
 set "REG_KEY=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%APP_NAME%"
@@ -88,7 +96,8 @@ powershell -Command "$s=(New-Object -ComObject WScript.Shell).CreateShortcut('%P
 :: 7. Install Dependencies
 echo [7/8] Installing dependencies (this may take a few minutes)...
 pushd "%INSTALL_DIR%"
-call npm install --production --legacy-peer-deps >> "%LOG_FILE%" 2>&1 || (popd & set "EXIT_CODE=7" & goto :ROLLBACK)
+:: Use --ignore-scripts to avoid cross-platform postinstall failures (e.g. yarn setup || true in stellar-sdk)
+call npm install --production --legacy-peer-deps --ignore-scripts >> "%LOG_FILE%" 2>&1 || (popd & set "EXIT_CODE=7" & goto :ROLLBACK)
 popd
 
 :: 8. Finalize
@@ -110,9 +119,21 @@ exit /b 0
 echo.
 echo [FATAL] Installation failed (Code: %EXIT_CODE%). Initiating rollback...
 echo [FATAL] Failure occurred. >> "%LOG_FILE%"
+echo.
+echo ==========================================
+echo   INSTALLATION ERROR LOG
+echo ==========================================
+if exist "%LOG_FILE%" (
+    type "%LOG_FILE%" | findstr /i "error"
+    echo.
+    echo Full log available at: %LOG_FILE%
+)
+echo ==========================================
+echo.
 if exist "%INSTALL_DIR%" (
     echo [INFO] Cleaning up %INSTALL_DIR%...
-    rmdir /S /Q "%INSTALL_DIR%" >> "%LOG_FILE%" 2>&1
+    :: We don't use the log file here to avoid locking it
+    rmdir /S /Q "%INSTALL_DIR%" >nul 2>&1
 )
 reg delete "%REG_KEY%" /f >nul 2>&1
 echo [INFO] Rollback complete.
